@@ -1,0 +1,50 @@
+<p>vendor-list works!</p>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Vendor Name</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Address</th>
+          <th scope="col">Contact No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let vendor of vendors">
+            <td>{{vendor.id}}</td>
+          <td>{{vendor.vendor_name}}</td>
+          <td>{{vendor.rating}}</td>
+          <td>{{vendor.address}}</td>
+          <td>{{vendor.contact_number}}</td>
+        </tr>
+      
+      </tbody>
+  </table>
+<!--
+<form>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Vendor Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="vendorname">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Rating</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="rating">
+      </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Addrees</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Contact No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="contactno">
+        </div>
+      </div>
+</form>
+-->
